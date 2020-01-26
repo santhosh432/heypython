@@ -4,4 +4,4 @@ from django.shortcuts import render, HttpResponse
 
 
 def home(request):
-    return HttpResponse('<h3 style="margin: auto; text-align:center; font-size:20px;">Hey python you are Incredible</h3>')
+    return render(request, 'blog/home.html')
