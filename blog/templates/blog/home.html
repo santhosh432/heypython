@@ -19,19 +19,18 @@
 	top: 0;
 	height: 100vh;
 	width: 280px;
-	background: #5FCB71;
+	background: {{ request.session.color }} ;
 	color: #fff;
 
 
 }
-.card-bg {	background: #5FCB71;
+ul.card-bg > li, .card-bg {	background: {{ request.session.color }};
 }
 
 .profile-pic-bg{
         width: 150px;
-
         margin: auto;
-
+        margin-bottom: -25px;
         height: 189px;
 }
 
@@ -47,9 +46,11 @@
 
 
         <div class="card card-bg">
-            <div class="card-header card-bg">
+            <div class="card-header card-bg" style="margin-bottom:13px;">
             <h5>Yamana Santhosh kumar</h5>
             </div>
+            <br>
+            <br>
             <img class="img rounded-circle profile-pic-bg" src="https://estudents.cusat.ac.in/media/cbcs_stu_photos/092020191032489847P.jpg" >
 
             <div class="card-body card-bg" style="font-size:14px; text-align:center;">
@@ -58,7 +59,7 @@
             </div>
 
             <div class="btn-group card-bg" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-dark"><i class="fab fa-github-square fa-fw"></i></button>
+              <button type="button" class="btn btn-dark"><a href="https://github.com/santhosh432"><i class="fab fa-github-square fa-fw"></i></a> </button>
               <button type="button" class="btn btn-dark"><i class="fab fa-linkedin"></i></button>
               <button type="button" class="btn btn-dark"><i class="fas fa-envelope"></i></button>
               <button type="button" class="btn btn-dark"><i class="fab fa-stack-overflow"></i></button>
@@ -70,10 +71,10 @@
 <hr>
             <div class="card card-bg" style="">
 
-              <ul class="list-group">
-                <li class="list-group-item list-group-item-success"> <i class="fas fa-home"></i> Blog Home</li>
-                <li class="list-group-item list-group-item-success"><i class="fas fa-user-circle"></i> About Me </li>
-                <li class="list-group-item list-group-item-success"><i class="fas fa-list"></i> All Post </li>
+              <ul class="list-group card-bg">
+                <li class="list-group-item "> <i class="fas fa-home"></i> Blog Home</li>
+                <li class="list-group-item "><i class="fas fa-user-circle"></i> About Me </li>
+                <li class="list-group-item "><i class="fas fa-list"></i> All Post </li>
               </ul>
             </div>
         </div>
@@ -85,7 +86,7 @@
 <div class="main-wrapper">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Hey Python <br> <em>You are incredible</em>  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
