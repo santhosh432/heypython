@@ -31,4 +31,4 @@ jobs:
       with:
         app-name: 'ysk-heypython'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_7ec7a85f8e244927840d1015c2da7185 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_0c60098f22964ab4a6974858ea1ad45d }}
